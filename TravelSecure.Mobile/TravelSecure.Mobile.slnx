@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../TravelSecure.Api/TravelSecure.Api.csproj" />
+  <Project Path="TravelSecure.Mobile/TravelSecure.Mobile.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
