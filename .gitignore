@@ -1,0 +1,13 @@
+# Carpetas de Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+
+# Archivos de usuario y temporales
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de paquetes
+.packages/
