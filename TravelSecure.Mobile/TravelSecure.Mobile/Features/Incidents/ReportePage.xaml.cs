@@ -84,7 +84,7 @@ public partial class ReportePage : ContentPage
     {
         if (string.IsNullOrEmpty(_tipoSeleccionado))
         {
-            await DisplayAlertAsync("⚠️ Falta el tipo",
+            await DisplayAlert("⚠️ Falta el tipo",
                 "Por favor selecciona una categoría de incidente antes de enviar.", "OK");
             return;
         }
@@ -105,7 +105,7 @@ public partial class ReportePage : ContentPage
 
             await Task.Delay(1600);
 
-            await DisplayAlertAsync("✅ Alerta enviada",
+            await DisplayAlert("✅ Alerta enviada",
                 $"Tu reporte de '{_tipoSeleccionado}' fue enviado.\n" +
                 "Los conductores cercanos han sido notificados.", "Aceptar");
 
@@ -113,7 +113,7 @@ public partial class ReportePage : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlertAsync("❌ Error al enviar",
+            await DisplayAlert("❌ Error al enviar",
                 $"No se pudo enviar el reporte: {ex.Message}", "OK");
         }
         finally

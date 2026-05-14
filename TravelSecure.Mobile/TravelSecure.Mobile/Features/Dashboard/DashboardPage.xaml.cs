@@ -182,7 +182,7 @@ public partial class DashboardPage : ContentPage
 
     private async void OnBuscarRuta(object sender, EventArgs e)
     {
-        await DisplayAlertAsync("Próximamente 🗺️",
+        await DisplayAlert("Próximamente 🗺️",
             "La búsqueda de rutas estará disponible en el siguiente avance.", "Entendido");
     }
 

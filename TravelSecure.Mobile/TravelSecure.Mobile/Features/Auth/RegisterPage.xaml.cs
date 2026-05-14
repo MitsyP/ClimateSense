@@ -15,14 +15,14 @@ public partial class RegisterPage : ContentPage
             string.IsNullOrWhiteSpace(EntryPassword.Text) ||
             PickerLicencia.SelectedIndex == -1)
         {
-            await DisplayAlertAsync("Campos incompletos",
+            await DisplayAlert("Campos incompletos",
                 "Por favor completa todos los campos obligatorios.", "OK");
             return;
         }
 
         if (EntryPassword.Text.Length < 8)
         {
-            await DisplayAlertAsync("Contraseña débil",
+            await DisplayAlert("Contraseña débil",
                 "La contraseña debe tener al menos 8 caracteres.", "OK");
             return;
         }
@@ -37,7 +37,7 @@ public partial class RegisterPage : ContentPage
         LoadingIndicator.IsVisible = false;
         BtnCrear.IsEnabled = true;
 
-        await DisplayAlertAsync("✅ ¡Registro exitoso!",
+        await DisplayAlert("✅ ¡Registro exitoso!",
             $"Bienvenido {EntryNombre.Text.Split(' ')[0]}.\nYa puedes iniciar sesión con tu cuenta.",
             "Continuar");
 

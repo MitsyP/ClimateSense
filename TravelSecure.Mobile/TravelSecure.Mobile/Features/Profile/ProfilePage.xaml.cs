@@ -9,7 +9,7 @@ public partial class ProfilePage : ContentPage
 
     private async void OnCerrarSesion(object sender, TappedEventArgs e)
     {
-        bool confirm = await DisplayAlertAsync("Cerrar Sesión",
+        bool confirm = await DisplayAlert("Cerrar Sesión",
             "¿Estás seguro que quieres cerrar tu sesión?",
             "Sí, cerrar sesión", "Cancelar");
 

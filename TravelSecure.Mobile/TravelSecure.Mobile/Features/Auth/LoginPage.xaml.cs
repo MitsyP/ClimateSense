@@ -14,7 +14,7 @@ public partial class LoginPage : ContentPage
         if (string.IsNullOrWhiteSpace(EntryEmail.Text) ||
             string.IsNullOrWhiteSpace(EntryPassword.Text))
         {
-            await DisplayAlertAsync("Campo vacío",
+            await Shell.Current.DisplayAlert("Campo vacío",
                 "Por favor ingresa tu correo y contraseña.", "OK");
             return;
         }
@@ -40,7 +40,7 @@ public partial class LoginPage : ContentPage
 
     private async void OnForgotPassword(object sender, EventArgs e)
     {
-        await DisplayAlertAsync("Recuperar contraseña",
+        await DisplayAlert("Recuperar contraseña",
             "Contacta a soporte@travelsecure.pe\nTe enviaremos un enlace de recuperación.", "OK");
     }
 }
