@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9BVi9IS5f+s=",
+  "dgSpecHash": "kpK024l0PPo=",
   "success": true,
-  "projectFilePath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj",
+  "projectFilePath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\travelsecure.mobile\\TravelSecure.Mobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zacfo\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\zacfo\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

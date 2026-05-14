@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj": {}
+    "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\travelsecure.mobile\\TravelSecure.Mobile.csproj": {}
   },
   "projects": {
-    "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj": {
+    "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\travelsecure.mobile\\TravelSecure.Mobile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj",
+        "projectUniqueName": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\travelsecure.mobile\\TravelSecure.Mobile.csproj",
         "projectName": "TravelSecure.Mobile",
-        "projectPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj",
+        "projectPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\travelsecure.mobile\\TravelSecure.Mobile.csproj",
         "packagesPath": "C:\\Users\\zacfo\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\obj\\",
+        "outputPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\travelsecure.mobile\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -34,23 +34,19 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-android": {
-            "framework": "net8.0-android34.0",
+          "net8.0-android34.0": {
             "targetAlias": "net8.0-android",
             "projectReferences": {}
           },
-          "net8.0-ios": {
-            "framework": "net8.0-ios18.0",
+          "net8.0-ios18.0": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {}
           },
-          "net8.0-maccatalyst": {
-            "framework": "net8.0-maccatalyst18.0",
+          "net8.0-maccatalyst18.0": {
             "targetAlias": "net8.0-maccatalyst",
             "projectReferences": {}
           },
-          "net8.0-windows10.0.19041.0": {
-            "framework": "net8.0-windows10.0.19041",
+          "net8.0-windows10.0.19041": {
             "targetAlias": "net8.0-windows10.0.19041.0",
             "projectReferences": {}
           }
@@ -67,8 +63,7 @@
         }
       },
       "frameworks": {
-        "net8.0-android": {
-          "framework": "net8.0-android34.0",
+        "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
@@ -111,8 +106,7 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-ios": {
-          "framework": "net8.0-ios18.0",
+        "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
@@ -155,8 +149,7 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-maccatalyst": {
-          "framework": "net8.0-maccatalyst18.0",
+        "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
@@ -200,8 +193,7 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-windows10.0.19041.0": {
-          "framework": "net8.0-windows10.0.19041",
+        "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
             "Microsoft.Extensions.Logging.Debug": {
