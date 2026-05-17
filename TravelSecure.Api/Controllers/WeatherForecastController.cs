@@ -1,26 +1,56 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System;
 
 namespace TravelSecure.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("api/[controller]")]
+    public class WeatherForescastController : ControllerBase
     {
-        private static readonly string[] Summaries =
-        [
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        ];
+        private readonly HttpClient _httpClient;
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        public IEnumerable<WeatherForecast> Get()
+
+        private const string ApiKey = "e6ea39e041d47919021a46041574afe1";
+
+        
+        public WeatherForescastController(IHttpClientFactory httpClientFactory)
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            _httpClient = httpClientFactory.CreateClient();
+        }
+
+        
+        [HttpGet("ruta/{ciudad}")]
+        public async Task<IActionResult> GetClimaPorRuta(string ciudad)
+        {
+            
+            if (string.IsNullOrWhiteSpace(ciudad))
             {
-                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                return BadRequest("El nombre de la ciudad es requerido.");
+            }
+
+            try
+            {
+                string url = $"https://api.openweathermap.org/data/2.5/weather?q={Uri.EscapeDataString(ciudad)}&appid={ApiKey}&units=metric&lang=es";
+
+                var response = await _httpClient.GetAsync(url);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    
+                    return StatusCode((int)response.StatusCode, $"Error al consultar OpenWeather: {response.ReasonPhrase}");
+                }
+
+                string jsonPlano = await response.Content.ReadAsStringAsync();
+
+                
+                return Content(jsonPlano, "application/json");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno en el servidor: {ex.Message}");
+            }
         }
     }
 }
