@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj": {}
+    "C:\\Proyecto full stack\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj": {}
   },
   "projects": {
-    "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj": {
+    "C:\\Proyecto full stack\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj",
+        "projectUniqueName": "C:\\Proyecto full stack\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj",
         "projectName": "TravelSecure.Api",
-        "projectPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj",
-        "packagesPath": "C:\\Users\\zacfo\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Api\\obj\\",
+        "projectPath": "C:\\Proyecto full stack\\ClimateSense\\TravelSecure.Api\\TravelSecure.Api.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto full stack\\ClimateSense\\TravelSecure.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zacfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.420/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.421/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

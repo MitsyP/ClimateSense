@@ -144,6 +144,45 @@
                     </VerticalStackLayout>
                 </Border>
 
+                <!--Integracion con la api nuevo apartado -->
+                <Border BackgroundColor="#0F1520" StrokeThickness="1" Padding="16">
+                    <Border.Stroke>
+                        <SolidColorBrush Color="#1E2D45"/>
+                    </Border.Stroke>
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="🛠️ PRUEBA DE API BACKEND (CLIMA)" FontSize="11" TextColor="#FFC107" FontAttributes="Bold" CharacterSpacing="1"/>
+
+                        <Entry x:Name="TxtRutaCiudad" 
+                            Placeholder="Escribe una ciudad (Ej: Lima)" 
+                            TextColor="White"
+                            PlaceholderColor="#4B5563"
+                            BackgroundColor="#111827"
+                            FontSize="13"
+                            HeightRequest="40"/>
+                        <Button x:Name="BtnBuscarClima"
+                            Text="CONSULTAR API BACKEND"
+                            Clicked="OnBtnBuscarClima"
+                            BackgroundColor="#FFC107"
+                            TextColor="#080C14"
+                            FontAttributes="Bold"
+                            FontSize="12"
+                            HeightRequest="38"/>
+
+                        <ScrollView HeightRequest="120" BackgroundColor="#050B14" Margin="0,5,0,0">
+                            <Label x:Name="LblClimaTextoPlano"
+                                 Text="Esperando consulta..."
+                                 TextColor="#22C55E"
+                                 FontSize="11"
+                                 FontFamily="Consolas"
+                                 Padding="8" />
+                        </ScrollView>
+                    </VerticalStackLayout>
+                </Border>
+
                 <!-- CLIMA EN RUTA -->
                 <Border StrokeThickness="0" Padding="0">
                     <Border.StrokeShape>
