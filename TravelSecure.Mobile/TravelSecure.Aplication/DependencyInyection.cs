@@ -11,6 +11,14 @@ namespace TravelSecure.Aplication
     {
         public static IServiceCollection AddAplicationDI(this IServiceCollection services)
         {
+             // Registrar MediatR
+            services.AddMediatR(cfg =>
+                cfg.RegisterServicesFromAssembly(
+                    typeof(DependencyInyection).Assembly));
+
+            // Registrar HttpClient
+            services.AddHttpClient();
+
             return services;
         }
     }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TravelSecure.Core.Interfaces
 {
-    internal class IWeatherService
+    public interface IWeatherService
     {
+        Task<string> ObtenerClima(string ciudad);
     }
 }
