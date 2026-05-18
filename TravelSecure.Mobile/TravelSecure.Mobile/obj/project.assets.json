@@ -33161,24 +33161,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zacfo\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\scorp\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj",
+      "projectUniqueName": "C:\\Users\\scorp\\Documents\\GirHubPrueba\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj",
       "projectName": "TravelSecure.Mobile",
-      "projectPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj",
-      "packagesPath": "C:\\Users\\zacfo\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\MitsyP\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\obj\\",
+      "projectPath": "C:\\Users\\scorp\\Documents\\GirHubPrueba\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\TravelSecure.Mobile.csproj",
+      "packagesPath": "C:\\Users\\scorp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\scorp\\Documents\\GirHubPrueba\\ClimateSense\\TravelSecure.Mobile\\TravelSecure.Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\zacfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\scorp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -1,5 +1,8 @@
 <Solution>
   <Project Path="../TravelSecure.Api/TravelSecure.Api.csproj" />
+  <Project Path="TravelSecure.Aplication/TravelSecure.Aplication.csproj" Id="2a9c67fe-d46b-4a2c-92e3-2c2bac85ff78" />
+  <Project Path="TravelSecure.Core/TravelSecure.Core.csproj" Id="b66e14a2-0a41-4037-8d4a-ae9b10b27df8" />
+  <Project Path="TravelSecure.Infrastructure/TravelSecure.Infrastructure.csproj" Id="b8671770-b929-49de-9596-90072e1b4057" />
   <Project Path="TravelSecure.Mobile/TravelSecure.Mobile.csproj">
     <Deploy Solution="Debug|*" />
   </Project>

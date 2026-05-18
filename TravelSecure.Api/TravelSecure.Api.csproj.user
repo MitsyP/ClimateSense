@@ -3,4 +3,8 @@
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup />
 </Project>
