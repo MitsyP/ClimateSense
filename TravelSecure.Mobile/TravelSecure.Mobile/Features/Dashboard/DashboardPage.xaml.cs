@@ -1,11 +1,11 @@
+using System.Globalization;
 using System.Text.Json;
 
 namespace TravelSecure.Mobile.Features.Dashboard;
 
 public partial class DashboardPage : ContentPage
 {
-    private const string WeatherApiKey = "cf99dc2801a290f703d3c742963c1d14";
-    private const string WeatherUrl = "https://api.openweathermap.org/data/2.5/weather";
+    
   
     //integracion de la api
     private const string ApiUrlBase = "https://10.0.2.2:7224";
@@ -50,13 +50,21 @@ public partial class DashboardPage : ContentPage
             var response = await client.GetStringAsync(url);
             var data = JsonDocument.Parse(response);
 
-            var temp = data.RootElement.GetProperty("main").GetProperty("temp").GetDouble();
-            var desc = data.RootElement.GetProperty("weather")[0]
-                           .GetProperty("description").GetString() ?? "despejado";
+            var root = data.RootElement;
+            var temp = root.GetProperty("temp").GetDecimal();
+            var desc = root.GetProperty("description").GetString() ?? "despejado"; 
+            var name = root.GetProperty("name").GetString();
+            var country = root.GetProperty("country").GetString();
+            var feelsLike = data.RootElement.GetProperty("feelsLike").GetDecimal();
+            var humidity = data.RootElement.GetProperty("humidity").GetInt32();
+            var wind = data.RootElement.GetProperty("windSpeed").GetDecimal();
 
-            LblTempClima.Text = $"{temp:F0}°";
-            LblDescClima.Text = System.Globalization.CultureInfo.CurrentCulture
-                                      .TextInfo.ToTitleCase(desc);
+            LblTemp.Text = $"{temp:F0}°";
+            LblDesc.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(desc);
+            LblCiudad.Text = $"{name}, {country}";
+            LblFeelsLike.Text = $"Sensación térmica: {feelsLike:F0}°";
+            LblHumidity.Text = $"Humedad: {humidity}%";
+            LblWind.Text = $"Viento: {wind} m/s";
 
             var cond = desc.ToLower();
             if (cond.Contains("lluvia") || cond.Contains("tormenta") || cond.Contains("niebla"))
@@ -188,17 +196,24 @@ public partial class DashboardPage : ContentPage
                 {
                     string jsonPlano = await response.Content.ReadAsStringAsync();
 
-                    LblClimaTextoPlano.Text = jsonPlano;
+                    //LblClimaTextoPlano.Text = jsonPlano;
 
                     var data = JsonDocument.Parse(jsonPlano);
 
-                    var temp = data.RootElement.GetProperty("main").GetProperty("temp").GetDouble();
-                    var desc = data.RootElement.GetProperty("weather")[0]
-                                   .GetProperty("description").GetString() ?? "despejado";
+                    var temp = data.RootElement.GetProperty("temp").GetDecimal();
+                    var desc = data.RootElement.GetProperty("description").GetString() ?? "despejado";
+                    var name = data.RootElement.GetProperty("name").GetString();
+                    var country = data.RootElement.GetProperty("country").GetString();
+                    var feelsLike = data.RootElement.GetProperty("feelsLike").GetDecimal();
+                    var humidity = data.RootElement.GetProperty("humidity").GetInt32();
+                    var wind = data.RootElement.GetProperty("windSpeed").GetDecimal();
 
-                    LblTempClima.Text = $"{temp:F0}°";
-                    LblDescClima.Text = System.Globalization.CultureInfo.CurrentCulture
-                                              .TextInfo.ToTitleCase(desc);
+                    LblTemp.Text = $"{temp:F0}°";
+                    LblDesc.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(desc);
+                    LblCiudad.Text = $"{name}, {country}";
+                    LblFeelsLike.Text = $"Sensación térmica: {feelsLike:F0}°";
+                    LblHumidity.Text = $"Humedad: {humidity}%";
+                    LblWind.Text = $"Viento: {wind} m/s";
 
                     var cond = desc.ToLower();
                     if (cond.Contains("lluvia") || cond.Contains("tormenta") || cond.Contains("niebla"))
