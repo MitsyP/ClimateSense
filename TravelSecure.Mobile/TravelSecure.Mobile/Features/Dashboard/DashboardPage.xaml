@@ -172,14 +172,41 @@
                             FontSize="12"
                             HeightRequest="38"/>
 
-                        <ScrollView HeightRequest="120" BackgroundColor="#050B14" Margin="0,5,0,0">
-                            <Label x:Name="LblClimaTextoPlano"
-                                 Text="Esperando consulta..."
-                                 TextColor="#22C55E"
-                                 FontSize="11"
-                                 FontFamily="Consolas"
-                                 Padding="8" />
-                        </ScrollView>
+                        <VerticalStackLayout Spacing="4" Margin="0,5,0,0"
+                                    BackgroundColor="#050B14"
+                                    Padding="10">
+
+                            <Label x:Name="LblTemp"
+                                Text="--°"
+                                FontSize="24"
+                                FontAttributes="Bold"
+                                TextColor="#F7CA18"/>
+
+                            <Label x:Name="LblDesc"
+                                Text="Esperando consulta..."
+                                FontSize="13"
+                                TextColor="#22C55E"/>
+
+                            <Label x:Name="LblCiudad"
+                                Text="--"
+                                FontSize="11"
+                                TextColor="#9CA3AF"/>
+                            <Label x:Name="LblFeelsLike"
+                                Text=""
+                                FontSize="11"
+                                TextColor="#9CA3AF"/>
+
+                            <Label x:Name="LblHumidity"
+                                Text=""
+                                FontSize="11"
+                                TextColor="#9CA3AF"/>
+
+                            <Label x:Name="LblWind"
+                                Text=""
+                                FontSize="11"
+                                TextColor="#9CA3AF"/>
+
+                        </VerticalStackLayout>
                     </VerticalStackLayout>
                 </Border>
 

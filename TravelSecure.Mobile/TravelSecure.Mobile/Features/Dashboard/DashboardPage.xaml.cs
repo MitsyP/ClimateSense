@@ -55,9 +55,16 @@ public partial class DashboardPage : ContentPage
             var desc = root.GetProperty("description").GetString() ?? "despejado"; 
             var name = root.GetProperty("name").GetString();
             var country = root.GetProperty("country").GetString();
+            var feelsLike = data.RootElement.GetProperty("feelsLike").GetDecimal();
+            var humidity = data.RootElement.GetProperty("humidity").GetInt32();
+            var wind = data.RootElement.GetProperty("windSpeed").GetDecimal();
 
-            LblTempClima.Text = $"{temp:F0}°";
-            LblDescClima.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(desc);
+            LblTemp.Text = $"{temp:F0}°";
+            LblDesc.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(desc);
+            LblCiudad.Text = $"{name}, {country}";
+            LblFeelsLike.Text = $"Sensación térmica: {feelsLike:F0}°";
+            LblHumidity.Text = $"Humedad: {humidity}%";
+            LblWind.Text = $"Viento: {wind} m/s";
 
             var cond = desc.ToLower();
             if (cond.Contains("lluvia") || cond.Contains("tormenta") || cond.Contains("niebla"))
@@ -189,7 +196,7 @@ public partial class DashboardPage : ContentPage
                 {
                     string jsonPlano = await response.Content.ReadAsStringAsync();
 
-                    LblClimaTextoPlano.Text = jsonPlano;
+                    //LblClimaTextoPlano.Text = jsonPlano;
 
                     var data = JsonDocument.Parse(jsonPlano);
 
@@ -197,10 +204,16 @@ public partial class DashboardPage : ContentPage
                     var desc = data.RootElement.GetProperty("description").GetString() ?? "despejado";
                     var name = data.RootElement.GetProperty("name").GetString();
                     var country = data.RootElement.GetProperty("country").GetString();
+                    var feelsLike = data.RootElement.GetProperty("feelsLike").GetDecimal();
+                    var humidity = data.RootElement.GetProperty("humidity").GetInt32();
+                    var wind = data.RootElement.GetProperty("windSpeed").GetDecimal();
 
-                    LblTempClima.Text = $"{temp:F0}°";
-                    LblDescClima.Text = System.Globalization.CultureInfo.CurrentCulture
-                                              .TextInfo.ToTitleCase(desc);
+                    LblTemp.Text = $"{temp:F0}°";
+                    LblDesc.Text = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(desc);
+                    LblCiudad.Text = $"{name}, {country}";
+                    LblFeelsLike.Text = $"Sensación térmica: {feelsLike:F0}°";
+                    LblHumidity.Text = $"Humedad: {humidity}%";
+                    LblWind.Text = $"Viento: {wind} m/s";
 
                     var cond = desc.ToLower();
                     if (cond.Contains("lluvia") || cond.Contains("tormenta") || cond.Contains("niebla"))
