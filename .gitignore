@@ -1,4 +1,4 @@
-# Carpetas de Visual Studio
+# Evitar creacion de carpetas basura de Visual Studio
 .vs/
 [Bb]in/
 [Oo]bj/
@@ -11,3 +11,4 @@
 
 # Archivos de paquetes
 .packages/
+
