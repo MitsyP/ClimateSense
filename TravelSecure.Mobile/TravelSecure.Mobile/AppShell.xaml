@@ -9,16 +9,20 @@
        x:Class="TravelSecure.Mobile.AppShell"
        Shell.NavBarIsVisible="False"
        Shell.TabBarIsVisible="False">
+    
+    
 
     <!-- ══════════════════════════════════════════ -->
     <!-- FLUJO AUTH (sin barra de tabs)             -->
     <!-- ══════════════════════════════════════════ -->
+    
     <ShellContent Route="LoginPage"
                   ContentTemplate="{DataTemplate auth:LoginPage}" />
 
     <!-- ══════════════════════════════════════════ -->
     <!-- APP PRINCIPAL con tabs personalizados      -->
     <!-- ══════════════════════════════════════════ -->
+    
     <TabBar x:Name="MainTabBar" Route="main">
         <Tab Title="Inicio" Route="dashboard">
             <ShellContent Route="DashboardPage"
