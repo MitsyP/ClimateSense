@@ -42,6 +42,7 @@
                     </Grid.Background>
 
                     <!-- Líneas decorativas de carretera -->
+                    
                     <BoxView BackgroundColor="#F7CA18" Opacity="0.08"
                              WidthRequest="2" HeightRequest="200"
                              HorizontalOptions="Center" VerticalOptions="End"

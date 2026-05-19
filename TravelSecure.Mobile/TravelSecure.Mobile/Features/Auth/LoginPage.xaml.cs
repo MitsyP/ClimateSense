@@ -21,7 +21,9 @@ public partial class LoginPage : ContentPage
         }
 
         BtnLogin.IsEnabled = false;
+
         LoadingIndicator.IsVisible = true;
+
         LoadingIndicator.IsRunning = true;
 
         await Task.Delay(1500);
