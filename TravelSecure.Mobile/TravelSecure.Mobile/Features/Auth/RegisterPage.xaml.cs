@@ -28,6 +28,7 @@ public partial class RegisterPage : ContentPage
         {
             await DisplayAlert("Contraseña débil",
                 "La contraseña debe tener al menos 8 caracteres.", "OK");
+
             return;
         }
 

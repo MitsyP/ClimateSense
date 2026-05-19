@@ -23,6 +23,7 @@
             <VerticalStackLayout Padding="28,56,28,40" Spacing="0">
 
                 <!-- Header con botón volver -->
+                
                 <Grid ColumnDefinitions="Auto,*,Auto" Margin="0,0,0,28">
                     <Border Grid.Column="0"
                             BackgroundColor="#111827"
