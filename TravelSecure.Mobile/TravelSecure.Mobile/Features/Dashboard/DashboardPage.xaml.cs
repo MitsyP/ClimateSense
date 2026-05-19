@@ -173,6 +173,7 @@ public partial class DashboardPage : ContentPage
     private async void OnNavPerfil(object sender, EventArgs e) => await Shell.Current.GoToAsync("//main/profile/ProfilePage");
 
     private async void OnBtnBuscarClima(object sender, EventArgs e)
+    
     {
         string ciudad = TxtRutaCiudad.Text;
 

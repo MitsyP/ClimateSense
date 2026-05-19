@@ -6,6 +6,7 @@
              BackgroundColor="#080C14">
 
     <Grid>
+        
         <!-- Fondo con efecto de carretera nocturna -->
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
@@ -31,6 +32,7 @@
             <VerticalStackLayout Padding="32,0,32,40" Spacing="0">
 
                 <!-- ═══ ZONA HERO ═══ -->
+                
                 <Grid HeightRequest="300" Margin="-32,0,-32,0">
                     <Grid.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">

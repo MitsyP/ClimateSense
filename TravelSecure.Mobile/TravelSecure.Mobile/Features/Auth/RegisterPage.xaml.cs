@@ -10,9 +10,13 @@ public partial class RegisterPage : ContentPage
     private async void OnCrearCuenta(object sender, EventArgs e)
     {
         if (string.IsNullOrWhiteSpace(EntryNombre.Text) ||
+     
             string.IsNullOrWhiteSpace(EntryEmail.Text) ||
+            
             string.IsNullOrWhiteSpace(EntryDni.Text) ||
+            
             string.IsNullOrWhiteSpace(EntryPassword.Text) ||
+            
             PickerLicencia.SelectedIndex == -1)
         {
             await DisplayAlert("Campos incompletos",

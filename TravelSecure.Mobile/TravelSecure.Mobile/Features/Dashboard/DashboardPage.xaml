@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TravelSecure.Mobile.Features.Dashboard.DashboardPage"
              Shell.NavBarIsVisible="False"
+             
              BackgroundColor="#080C14">
 
     <Grid RowDefinitions="Auto,*,Auto">
@@ -14,6 +15,7 @@
                 <Label Text="Buenos días 👋" FontSize="12" TextColor="#6B7280"/>
                 <Label Text="TRAVEL SECURE" FontSize="18" FontAttributes="Bold"
                        TextColor="White" CharacterSpacing="1"/>
+                
             </VerticalStackLayout>
             <!-- Badge clima en vivo -->
             <Border Grid.Column="1"
